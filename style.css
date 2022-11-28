@@ -74,7 +74,7 @@ nav form input {
   border: 1px solid rgba(0, 0, 255, 0.2);
   color: black;
   padding: 10px 0;
-  background-color: rgba(0, 255, 255, 0.273);
+  background-color: rgba(0, 255, 255, 0.232);
 }
 .nav-container li,
 footer li {
@@ -152,7 +152,7 @@ h1 {
 }
 .plane-finder-container {
   display: inline-block;
-  background-color: rgba(139, 140, 137, 0.2);
+  background-color: aqua;
   padding: 5%;
   box-shadow: 2px 2px 6px 1px black;
 }
