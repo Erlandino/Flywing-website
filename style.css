@@ -1,0 +1,421 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-image: linear-gradient(to top left, rgba(0, 193, 157, 0.6), rgba(0, 0, 255, 0.6));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* link menu */
+#link-menu {
+  list-style-type: none;
+  background-color: #6096ba;
+  width: 200px;
+  position: absolute;
+  top: 34px;
+  left: -25px;
+  font-size: 20px;
+  padding-bottom: 10px;
+  box-shadow: 2px 2px 4px black;
+}
+#link-menu .login,
+#link-menu .my-page {
+  display: none;
+}
+/* link menu */
+
+/* login form */
+nav form {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 55px;
+  background-color: #6096ba;
+  color: black;
+  padding: 10px;
+  box-shadow: 2px 2px 4px black;
+}
+nav form div label {
+  display: block;
+}
+
+nav form input {
+  outline: none;
+  border: 2px solid white;
+  background-color: #a3cef1;
+  box-shadow: none;
+  color: black;
+}
+
+#submit {
+  margin-top: 10px;
+}
+
+/* login form */
+
+/* main title */
+.main-title {
+  text-align: center;
+}
+.main-title span {
+  font-weight: 350;
+  letter-spacing: 5px;
+  text-decoration: 2px underline;
+}
+/* main title */
+
+/* nav, footer li, container  */
+.container {
+  display: block;
+  border: 1px solid rgba(0, 0, 255, 0.2);
+  color: black;
+  padding: 10px 0;
+  background-color: rgba(0, 255, 255, 0.273);
+}
+.nav-container li,
+footer li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 20px;
+  height: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.nav-container .login,
+.nav-container .my-page {
+  display: block;
+  float: right;
+  cursor: pointer;
+}
+.login:hover,
+.my-page a:hover,
+#link-menu li:hover {
+  text-decoration: underline;
+}
+
+.menu-container {
+  float: left;
+  cursor: pointer;
+}
+
+.search-bar {
+  background-color: a3cef1;
+  border: 3px solid white;
+}
+.search-bar input,
+.plane-finder input {
+  display: inline;
+  font-size: 20px;
+  width: 200px;
+  outline: none;
+  border: none;
+  background-color: #a3cef1;
+  color: black;
+}
+.search-bar input::placeholder,
+.plane-finder input::placeholder {
+  color: black;
+  opacity: 0.6;
+}
+.menu {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+.search {
+  display: inline;
+  float: right;
+  width: 30px;
+  height: 30px;
+}
+/* nav, footer li, container, chart li  */
+
+/* plane destination selector */
+.plane-finder {
+  display: block;
+  text-align: center;
+  margin: 100px 0 120px 0;
+  font-size: 25px;
+  font-weight: lighter;
+}
+h1 {
+  font-size: 40px;
+  font-weight: lighter;
+}
+.plane-finder-container {
+  display: inline-block;
+  background-color: rgba(139, 140, 137, 0.2);
+  padding: 5%;
+  box-shadow: 2px 2px 6px 1px black;
+}
+.plane-finder .plane-finder-container div {
+  display: inline-block;
+  margin: 0 10px;
+}
+.plane-finder label {
+  display: block;
+  text-align: left;
+}
+.plane-finder input,
+.plane-finder button {
+  border: 3px solid white;
+  font-size: 25px;
+  box-shadow: 2px 2px 6px 1px black;
+}
+.plane-finder-button button {
+  background-color: green;
+  overflow: none;
+  padding: 3px 20px;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+.plane {
+  width: 30px;
+  height: 30px;
+}
+/* ticket menu */
+
+.middle-line {
+  border: 1px solid rgba(0, 0, 255, 0.2);
+}
+
+/* image gallery */
+.image-gallery {
+  display: block;
+  text-align: center;
+  margin: 50px 0 100px 0;
+}
+.image-gallery div {
+  display: inline-block;
+  width: 30%;
+  border: 1px solid rgba(0, 0, 255, 0.5);
+}
+.image-gallery img {
+  width: 100%;
+}
+.image-gallery p {
+  position: absolute;
+  margin: 0;
+  width: 30%;
+  transform: translate(0, -30px);
+  box-sizing: border-box;
+  color: white;
+  padding: 5px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+}
+.image-container1:hover p,
+.image-container2:hover p,
+.image-container3:hover p {
+  transition: 1s;
+  opacity: 1;
+}
+
+/* image gallery */
+
+/* bar chart */
+.chart {
+  margin: 100px 0;
+}
+.bar-chart-container {
+  display: block;
+  text-align: center;
+  border-top: 4px solid black;
+  height: 400px;
+  width: 90%;
+  margin: auto;
+  transform: rotate(180deg);
+}
+.bar-chart-container div {
+  display: inline-block;
+  position: relative;
+  /* animation-name: test; */
+  width: 12%;
+  font-size: 20px;
+}
+
+.bar-chart-container div p,
+.bar-chart-container div input {
+  transform: rotate(180deg);
+}
+
+.bar-chart-container div input {
+  width: 100%;
+  text-align: center;
+  border: none;
+  color: black;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 20px;
+}
+.chart h1,
+.chart h2 {
+  text-align: center;
+  display: block;
+}
+.chart h2 {
+  font-weight: 300;
+}
+.week-buttons {
+  text-align: center;
+}
+.week-buttons button {
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 5px;
+  color: white;
+  background-color: #8b8c89;
+  cursor: pointer;
+}
+.week-buttons button:nth-child(1) {
+  background-color: white;
+  color: #8b8c89;
+}
+.bar-chart-container div:nth-child(odd) {
+  background-color: #274c77;
+  color: white;
+}
+.bar-chart-container div:nth-child(even) {
+  background-color: #e7ecef;
+}
+.bar-chart-container div:nth-child(odd) input {
+  color: white;
+}
+#block7 {
+  animation-name: high-block;
+  animation-duration: 2s;
+  height: 100%;
+}
+#block6 {
+  animation-name: middle-block;
+  animation-duration: 2s;
+  height: 50%;
+}
+#block5 {
+  animation-name: short-block;
+  animation-duration: 2s;
+  height: 25%;
+}
+#block4 {
+  animation-name: short-block;
+  animation-duration: 2s;
+  height: 25%;
+}
+#block3 {
+  animation-name: middle-block;
+  animation-duration: 2s;
+  height: 50%;
+}
+#block2 {
+  height: 0%;
+  animation-duration: 2s;
+}
+#block1 {
+  animation-name: high-block;
+  animation-duration: 2s;
+  height: 100%;
+}
+@keyframes short-block {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 25%;
+  }
+}
+@keyframes middle-block {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 50%;
+  }
+}
+@keyframes high-block {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+/* bar chart */
+footer .container {
+  margin-top: 40px;
+  text-align: center;
+  padding: 5px 0;
+}
+footer li {
+  padding: 0;
+  font-size: 12px;
+  margin: 0;
+  height: 12px;
+}
+/* responsive */
+@media screen and (max-width: 700px) {
+  .plane-finder .plane-finder-container div {
+    display: block;
+    margin: 10px 0;
+    text-align: left;
+  }
+  .plane-finder .plane-finder-container input {
+    width: 100%;
+  }
+  .plane-finder .plane-finder-button button {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav-container li {
+    font-size: 10px;
+    height: 15px;
+    margin: 0 5px;
+  }
+  .search-bar input {
+    width: 100px;
+    font-size: 10px;
+    height: 15px;
+  }
+  .search {
+    width: 15px;
+    height: 15px;
+  }
+  .menu {
+    width: 30px;
+    height: 30px;
+    margin-top: -5px;
+  }
+  .nav-container .login,
+  .nav-container .my-page {
+    display: block;
+  }
+  .bar-chart-container div {
+    font-size: 4vw;
+  }
+  #link-menu {
+    top: 20px;
+  }
+  nav form {
+    top: 40px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .nav-container .login,
+  .nav-container .my-page {
+    display: none;
+  }
+  #link-menu .login,
+  #link-menu .my-page {
+    display: block;
+  }
+}
+/* responsive */

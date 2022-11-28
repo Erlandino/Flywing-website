@@ -1,0 +1,6 @@
+Login - underline when hover - links to new page/animation downwards with username and password
+if logged in (My page) - links to new page
+
+search bar displayed allways - focus background coolor change/lightens up
+destinasjoner - link to new page
+contact - links to new page/animation downwards with info

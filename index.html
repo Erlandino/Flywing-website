@@ -1,0 +1,169 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flywing</title>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <header>
+      <nav>
+        <ul class="nav-container container">
+          <li class="menu-container"><img class="icon menu" src="./media/menu.svg" alt="" onclick="menuDisplay()"/></li>
+          <li class="search-bar">
+            <input type="text" name="" id="" placeholder="Search" />
+            <img class="icon search" src=".\media\search-icon.svg" alt="" />
+          </li>
+          <li class="login" onclick="loginDisplay()">Login</li>
+          <li class="my-page"><a href="./mypage.html">My page</a></li>
+        </ul>
+        <ul style="display: none" id="link-menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="">Contacts</a></li>
+          <li><a href="">Destinations</a></li>
+          <li class="login">Login</li>
+          <li class="my-page"><a href="./mypage.html">My page</a></li>
+        </ul>
+        <form action="" id="loginForm">
+          <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+          </div>
+
+          <div>
+            <label for="password">Password</label>
+            <input type="text" name="password" id="password">
+          </div>
+          <input type="submit" name="submit" id="submit" value="Login">
+        </form>
+      </nav>
+    </header>
+    <!-- navigation bar -->
+
+    <main>
+      <!-- plane destination form -->
+      <section>
+        <h1 class="main-title">Fly fast with <span>Flywing</span><img class="plane" src="./media/flight.svg" alt="" /></h1>
+        <form action="" class="plane-finder">
+          <div class="plane-finder-container">
+            <h1>Choose your destination <img class="plane" src="./media/airplane_ticket.svg" alt="" /></h1>
+            <div class="plane-finder-from">
+              <label for="fly-from">From <img class="plane" src="./media/flight_takeoff.svg" alt="" /></label>
+              <input list="fly-from" placeholder="Oslo" />
+              <datalist id="fly-from">
+                <option value="Oslo"></option>
+                <option value="Helsinki"></option>
+                <option value="Stockholm"></option>
+                <option value="Copenhagen"></option>
+              </datalist>
+            </div>
+            <div class="plane-finder-to">
+              <label for="fly-to">To <img class="plane" src="./media/flight_land.svg" alt="" /></label>
+              <input list="fly-to" placeholder="Stockholm" />
+              <datalist id="fly-to">
+                <option value="Oslo"></option>
+                <option value="Helsinki"></option>
+                <option value="Stockholm"></option>
+                <option value="Copenhagen"></option>
+              </datalist>
+            </div>
+            <div class="plane-finder-button">
+              <button>Search</button>
+            </div>
+          </div>
+        </form>
+      </section>
+      <!-- plane destination form -->
+
+      <hr class="middle-line" />
+
+      <!-- image gallery -->
+      <section>
+        <div class="image-gallery">
+          <h1>Beautiful places</h1>
+          <div class="image-container1">
+            <img src="./media/harbor.jpg" alt="Image could not be displayed" aria-label="Old Harbor in denmark"/>
+            <p>Denmark</p>
+          </div>
+
+          <div class="image-container2">
+            <img src="./media/skiing.jpg" alt="Image could not be displayed" aria-label="People skiing in snow mountain" />
+            <p>Norway</p>
+          </div>
+
+          <div class="image-container3">
+            <img src="./media/waterfall.jpg" alt="Image could not be displayed" aria-label="Waterfall in iceland"/>
+            <p>Iceland</p>
+          </div>
+        </div>
+      </section>
+      <!-- image gallery -->
+
+      <hr class="middle-line" />
+
+      <!-- block chart -->
+      <section>
+        <div class="chart">
+          <div>
+            <h1>Plane delays</h1>
+          </div>
+          <div class="bar-chart-container" id="block-chart">
+            <div id="block7">
+              <p class="block-desc">Sun</p>
+              <input disabled value="4"></input>
+            </div>
+            <div id="block6">
+              <p class="block-desc">Sat</p>
+              <input disabled value="2"></input>
+            </div>
+            <div id="block5">
+              <p class="block-desc">Fri</p>
+              <input disabled value="1"></input>
+            </div>
+            <div id="block4">
+              <p class="block-desc">Thu</p>
+              <input disabled value="1"></input>
+            </div>
+            <div id="block3">
+              <p class="block-desc">Wed</p>
+              <input disabled value="2"></input>
+            </div>
+            <div id="block2">
+              <p class="block-desc">Tue</p>
+              <input disabled value="0"></input>
+            </div>
+            <div id="block1">
+              <p class="block-desc">Mon</p>
+              <input disabled value="4"></input>
+            </div>
+          </div>
+          <div class="week-buttons">
+            <button id="weekButton1" onclick="planeDelays(week1, weekButton1)">Week 1</button>
+            <button id="weekButton2" onclick="planeDelays(week2, weekButton2)">Week 2</button>
+            <button id="weekButton3" onclick="planeDelays(week3, weekButton3)">Week 3</button>
+            <button id="weekButton4" onclick="planeDelays(week4, weekButton4)">Week 4</button>
+            <button id="weekButton5" onclick="planeDelays(week5, weekButton5)">Week 5</button>
+          </div>
+          <div>
+            <h2>Cases each week</h2>
+          </div>
+        </div>
+      </section>
+      <!-- block chart -->
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <nav class="container">
+        <ul>
+          <li>Copyright 8/30/2022</li>
+        </ul>
+      </nav>
+    </footer>
+    <!-- footer -->
+  </body>
+</html>
